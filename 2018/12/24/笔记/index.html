@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="醉卧九重天的博客">
 <meta property="og:description" content="hexo + githud 搭建个人博客 node环境配置linux操作系统1.浏览器打开 https://nodejs.org ,下载0.14.2长期支持版本的压缩包2.默认下载到/root/下载 路径，解压：1tar -xf node-v10.14.2-linux-x64.tar 3.创建node和npm的软件链接1ln -s /root/下载/node-v10.14.2-linux-x64/">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-26T07:15:47.455Z">
+<meta property="og:updated_time" content="2018-12-26T07:59:16.386Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="笔记">
 <meta name="twitter:description" content="hexo + githud 搭建个人博客 node环境配置linux操作系统1.浏览器打开 https://nodejs.org ,下载0.14.2长期支持版本的压缩包2.默认下载到/root/下载 路径，解压：1tar -xf node-v10.14.2-linux-x64.tar 3.创建node和npm的软件链接1ln -s /root/下载/node-v10.14.2-linux-x64/">
@@ -169,10 +169,39 @@
 <p>#<a href="http://easyicon.net/" target="_blank" rel="noopener">http://easyicon.net/</a>    icon 图表网站</p>
 <p>#<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a>  博客框架</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#hexo g 编译</span></span><br><span class="line"><span class="comment">#hexo d 上传</span></span><br><span class="line"><span class="comment">#done:git</span></span><br><span class="line"><span class="comment">#手机地址栏访问：用户名.githud.io</span></span><br></pre></td></tr></table></figure>
+<p>#域名绑定</p>
+<p>##域名解析</p>
+<table>
+<thead>
+<tr>
+<th>记录类型</th>
+<th>主机记录</th>
+<th>记录值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CNAEM</td>
+<td>WWW</td>
+<td>用户名.github.io</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>192.30.252.153</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>192.30.252.154</td>
+</tr>
+</tbody>
+</table>
+<p>##创建CNAME<br>在blog/source路径下新建一个叫CNAME的文件夹（不带后缀）<br>在文件内填写自己的域名，如：yunbloog.top</p>
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年12月26日 15:15</p>
+        <p>最后更新： 2018年12月26日 15:59</p>
         <p>原始链接： <a class="post-url" href="/2018/12/24/笔记/" title="笔记">http://yunblook.top/2018/12/24/笔记/</a></p>
         <footer>
             <a href="http://yunblook.top">
